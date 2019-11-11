@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: #efefef;
+    text-align: center;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 33%;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-caption {
+    font-weight: 200;
+}
+
+.second-caption {
+    margin-top: -10px;
+}
+
+.content-caption {
+    text-align: justify;
+}
+
+.features-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.wrap {
+    flex-direction: column;
+}
+
+.feature-column {
+    flex-basis: 23%;
+}
+
+.feature {
+    position: relative;
+    padding: 20px;
+    padding-bottom: 80px;
+    box-shadow: 0px 9px 20px -6px rgba(85, 85, 85, 1);
+    border-radius: 3px;
+    background-color: #F8F8FF;
+    margin: 20px;
+}
+
+
+
+.feature>p {
+    font-weight: 200;
+}
+
+.supervisor::before {
+    content: '';
+    position: absolute;
+    background-image: url(images/icon-supervisor.svg);
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    width: 32%;
+    height: 35%;
+}
+
+.team-builder::before {
+    content: '';
+    position: absolute;
+    background-image: url(images/icon-team-builder.svg);
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    width: 32%;
+    height: 35%;
+}
+
+.karma::before {
+    content: '';
+    position: absolute;
+    background-image: url(images/icon-karma.svg);
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    width: 32%;
+    height: 35%;
+}
+
+.calculator::before {
+    content: '';
+    position: absolute;
+    background-image: url(images/icon-calculator.svg);
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+    width: 32%;
+    height: 35%;
+}
+
+.supervisor {
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+
+.team-builder {
+    border-top: 3px solid hsl(0, 78%, 62%)
+}
+
+.karma {
+    border-top: 3px solid hsl(34, 97%, 64%)
+}
+
+.calculator {
+    border-top: 3px solid hsl(212, 86%, 64%)
+}
+
+@media (max-width: 1100px) {
+    .features-container {
+        flex-direction: column;
+    }
+
+    .feature {
+        flex-basis: 100%;
+    }
+
+    header {
+        grid-template-columns: 100%;
+    }
+
+}
